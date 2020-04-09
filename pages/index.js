@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from 'next/head';
 
 const Home = () => (
   <div className="container">
@@ -17,6 +17,11 @@ const Home = () => (
       </p>
 
       <div className="grid">
+        <a href="/test-centers" className="card">
+          <h3>Find a Test Center &rarr;</h3>
+          <p>See a map of all COVID-19 testing centers in your current area.</p>
+        </a>
+
         <a href="https://nextjs.org/docs" className="card">
           <h3>Documentation &rarr;</h3>
           <p>Find in-depth information about Next.js features and API.</p>
