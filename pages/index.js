@@ -17,7 +17,7 @@ const Home = () => (
       </p>
 
       <div className="grid">
-        <a href="/api/test-centers" className="card">
+        <a href="/api/test-centers" className="card help">
           <h3>Find a Test Center &rarr;</h3>
           <p>See a map of all COVID-19 testing centers in your current area.</p>
         </a>
@@ -181,6 +181,16 @@ const Home = () => (
         line-height: 1.5;
       }
 
+      .help {
+        background: red;
+        transition: ease-in 0.5s;
+      }
+      .help:hover {
+        transition: ease-in 0.5s;
+        color: black;
+        border: solid 1px red;
+        box-shadow: 0 0 2px red, inset 0 0 8px white;
+      }
       @media (max-width: 600px) {
         .grid {
           width: 100%;
