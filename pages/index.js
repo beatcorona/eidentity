@@ -17,7 +17,7 @@ const Home = () => (
       </p>
 
       <div className="grid">
-        <a href="/test-centers" className="card">
+        <a href="/api/test-centers" className="card">
           <h3>Find a Test Center &rarr;</h3>
           <p>See a map of all COVID-19 testing centers in your current area.</p>
         </a>
