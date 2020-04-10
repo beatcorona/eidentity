@@ -1,27 +1,23 @@
 import Link from 'next/link';
 
 const linkStyle = {
-  marginRight: 15,
   color: '#fff',
-  fontSize: '2rem',
+  fontSize: '1.2rem',
   textDecoration: 'none',
   fontFamily: 'Menlo, Monaco, DejaVu Sans Mono',
   textAlign: 'center',
-  width: '200px'
+  width: '20%'
 }; 
 
 const headerStyle = {
     border: '1px solid #111',
-    padding: 20,
+    padding: 10,
 }
 
 const Header = () => (
   <div style={headerStyle} className="header">
     <Link href="/">
       <a title="BeatCorona" style={linkStyle}>Home</a>
-    </Link>
-    <Link href="/test-centers">
-      <a title="COVID-19 Test Centers" style={linkStyle}>Get Tested</a>
     </Link>
     <Link href="/doctors">
       <a title="COVID-19 Doctors" style={linkStyle}>Doctors</a>
@@ -31,6 +27,9 @@ const Header = () => (
     </Link>
     <Link href="/help">
       <a title="BeatCorona Help" style={linkStyle}>Help</a>
+    </Link>
+    <Link href="/test-centers">
+      <a title="COVID-19 Test Centers" style={linkStyle}>Get Tested</a>
     </Link>
   <style jsx>
       {`
@@ -42,6 +41,7 @@ const Header = () => (
             align-items: center;
         }
           .headerStyle a {
+              text-align: center;
         }
          a:hover {
             color: red;
