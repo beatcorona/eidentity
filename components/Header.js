@@ -3,7 +3,7 @@ import Link from 'next/link';
 const linkStyle = {
   marginRight: 15,
   color: '#fff',
-  fontSize: '2rem',
+  fontSize: '1.5rem',
   textDecoration: 'none',
   fontFamily: 'Menlo, Monaco, DejaVu Sans Mono',
   textAlign: 'center',
@@ -17,6 +17,7 @@ const headerStyle = {
 
 const Header = () => (
   <div style={headerStyle} className="header">
+      
     <Link href="/">
       <a title="BeatCorona" style={linkStyle}>Home</a>
     </Link>
@@ -36,7 +37,7 @@ const Header = () => (
       {`
         .header {
             width: 100%;
-            background: #222;
+            background: #004445;
             display: flex;
             justify-content: center;
             align-items: center;

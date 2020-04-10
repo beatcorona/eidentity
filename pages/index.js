@@ -12,7 +12,7 @@ const Home = () => (
       <h1 className="title">
         Welcome to BeatCorona
       </h1>
-
+      <img src="/images/beatCorona_logo_1a.webp" className="index-logo"></img>
       <p className="description">
         You're not alone.
       </p>
@@ -85,7 +85,6 @@ const Home = () => (
       footer {
         width: 100%;
         height: 100px;
-        border-top: 1px solid #eaeaea;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -126,11 +125,12 @@ const Home = () => (
       .title,
       .description {
         text-align: center;
+        color: #f7b403;
       }
       
       .description {
-        line-height: 1.5;
-        font-size: 1.5rem;
+        line-height: 2;
+        font-size: 3rem;
       }
       
       code {
@@ -152,14 +152,23 @@ const Home = () => (
         margin-top: 3rem;
       }
       
+      .index-logo {
+        padding: 50px;
+        border-radius: 12px;
+      }
+      .index-logo img {
+        border-radius: 12px;
+
+      }
       .card {
         margin: 1rem;
+        background: #fcf5e5;
         flex-basis: 45%;
         padding: 1.5rem;
         text-align: left;
         color: inherit;
         text-decoration: none;
-        border: 1px solid #eaeaea;
+        border: 1px solid #f7b403;
         border-radius: 10px;
         transition: color 0.15s ease, border-color 0.15s ease;
       }
