@@ -10,7 +10,7 @@ const Home = () => (
     <Layout>
     <main>
       <h1 className="title">
-        Welcome to BeatCovid
+        Welcome to BeatCorona
       </h1>
 
       <p className="description">
