@@ -16,6 +16,7 @@ const headerStyle = {
 
 const Header = () => (
   <div style={headerStyle} className="header">
+      
     <Link href="/">
       <a title="BeatCorona" style={linkStyle}>Home</a>
     </Link>
@@ -35,7 +36,7 @@ const Header = () => (
       {`
         .header {
             width: 100%;
-            background: #222;
+            background: #004445;
             display: flex;
             justify-content: center;
             align-items: center;
