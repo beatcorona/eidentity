@@ -36,7 +36,8 @@ const Header = () => (
       {`
         .header {
             width: 100%;
-            background: #004445;
+            background: #004445a2;
+            border-radius: 12px;
             display: flex;
             justify-content: center;
             align-items: center;

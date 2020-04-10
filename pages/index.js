@@ -9,28 +9,25 @@ const Home = () => (
     </Head>
     <Layout>
     <main>
-      <h1 className="title">
-        Welcome to BeatCorona
-      </h1>
-      <img src="/images/beatCorona_logo_1a.webp" className="index-logo"></img>
-      <p className="description">
-        You're not alone.
-      </p>
+      <div className="index-logo">
+      <img src="/images/beatCorona_logo_1a.webp"></img>
+      </div>
+
 
       <div className="grid">
         <a href="/api/test-centers" className="card help">
-          <h3>Find a Test Center &rarr;</h3>
+          <h3>Find a Test Center</h3>
           <p>See a map of all COVID-19 testing centers in your current area.</p>
         </a>
 
         <a href="https://nextjs.org/docs" className="card">
-          <h3>Documentation &rarr;</h3>
-          <p>Find in-depth information about Next.js features and API.</p>
+          <h3>Self Assessments</h3>
+          <p>Take a minute to make sure you are safe. Click here to check out all the tests available to help.</p>
         </a>
 
         <a href="https://nextjs.org/learn" className="card">
-          <h3>Learn &rarr;</h3>
-          <p>Learn about Next.js in an interactive course with quizzes!</p>
+          <h3>Know Your Surroundings</h3>
+          <p>Click here to see COVID-19 hotspots in your current location. You can also see local and worldwide statistics on the virus.</p>
         </a>
 
         <a
@@ -53,56 +50,9 @@ const Home = () => (
       </div>
     </main>
     </Layout>
-    <footer>
-      <div className="emergency">
-        <h5 className="emergency-notice">EMERGENCY</h5>
-        <button><a href="tel:021-040-77oo">Call</a></button>
-        <h5 className="emergency-notice">ONLY</h5>
-      </div>
-      <div className="left-footer">
-        <p>BeatCorona</p>
-      </div>
-      <div className="right-footer">
-        <p><a href="/help">
-          Contact Us
-          </a>
-          </p>
-      </div>
-    </footer>
 
     <style jsx>{`
-      footer {
-        width: 90vw;
-        margin: 0 auto;
-      }
-      .emergency {
-        background: red;
-        padding: 10px;
-      }
-      .emergency h5 {
-        text-align: center;
-        padding: 4px;
-        margin: 0;
-      }
-      .emergency button {
-        background: white;
-        width: 100%;
-        margin-top: 5px;
-        border-radius: 12px;
-        font-size: 1.2rem;
-      }
-      .left-footer {
-        width: 40%;
-      }
-      .left-footer p {
-        text-align: center;
-      }
-      .right-footer p {
-        text-align: center;
-      }
-      .right-footer {
-        width: 40%;
-      }
+    
       .container {
         min-height: 100vh;
         padding: 0 0.5rem;
@@ -113,7 +63,7 @@ const Home = () => (
       }
       
       main {
-        padding: 5rem 0;
+        padding: 2rem 0;
         flex: 1;
         display: flex;
         flex-direction: column;
@@ -165,11 +115,15 @@ const Home = () => (
       .description {
         text-align: center;
         color: #f7b403;
+        background: #004445a2;
+        padding: 8px;
+        border-radius: 12px;
+        border: groove 2px #f7b403;
       }
       
       .description {
-        line-height: 2;
-        font-size: 3rem;
+        line-height: 1.5;
+        font-size: 2.5rem;
       }
       
       code {
@@ -180,20 +134,19 @@ const Home = () => (
         font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
         DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
       }
-
+      
       .grid {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-        
-        max-width: 800px;
         margin-top: 3rem;
       }
       
       .index-logo {
-        padding: 50px;
-        border-radius: 12px;
+        padding: 30px;
+        background: #f7b60393;
+        border: solid 10px #004445;
       }
       .index-logo img {
         border-radius: 12px;
@@ -201,7 +154,7 @@ const Home = () => (
       }
       .card {
         margin: 1rem;
-        background: #fcf5e5;
+        background: #f7b60393;;
         flex-basis: 45%;
         padding: 1.5rem;
         text-align: left;
@@ -215,7 +168,7 @@ const Home = () => (
       .card:hover,
       .card:focus,
       .card:active {
-        color: #0070f3;
+        color: #000;
         border-color: #0070f3;
       }
       
