@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 const Home = () => (
   <div className="container">
     <Head>
-      <title>Create Next App</title>
+      <title>BeatCorona</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <Layout>
@@ -54,16 +54,55 @@ const Home = () => (
     </main>
     </Layout>
     <footer>
-      <a
-        href="https://zeit.co?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-        >
-        Powered by <img src="/zeit.svg" alt="ZEIT Logo" />
-      </a>
+      <div className="emergency">
+        <h5 className="emergency-notice">EMERGENCY</h5>
+        <button><a href="tel:021-040-77oo">Call</a></button>
+        <h5 className="emergency-notice">ONLY</h5>
+      </div>
+      <div className="left-footer">
+        <p>BeatCorona</p>
+      </div>
+      <div className="right-footer">
+        <p><a href="/help">
+          Contact Us
+          </a>
+          </p>
+      </div>
     </footer>
 
     <style jsx>{`
+      footer {
+        width: 90vw;
+        margin: 0 auto;
+      }
+      .emergency {
+        background: red;
+        padding: 10px;
+      }
+      .emergency h5 {
+        text-align: center;
+        padding: 4px;
+        margin: 0;
+      }
+      .emergency button {
+        background: white;
+        width: 100%;
+        margin-top: 5px;
+        border-radius: 12px;
+        font-size: 1.2rem;
+      }
+      .left-footer {
+        width: 40%;
+      }
+      .left-footer p {
+        text-align: center;
+      }
+      .right-footer p {
+        text-align: center;
+      }
+      .right-footer {
+        width: 40%;
+      }
       .container {
         min-height: 100vh;
         padding: 0 0.5rem;
