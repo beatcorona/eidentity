@@ -198,6 +198,7 @@ const Home = () => (
           width: 100%;
           flex-direction: column;
         }
+
       }
     `}</style>
 

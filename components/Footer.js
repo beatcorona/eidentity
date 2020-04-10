@@ -47,6 +47,12 @@ const Header = () => (
     border-radius: 12px;
     font-size: 1.2rem;
   }
+  .emergency a {
+      color: red;
+      text-decoration: none;
+      font-weight: bolder;
+      font-size: 1.5rem;
+  }
   .left-footer {
     width: 40%;
 }
