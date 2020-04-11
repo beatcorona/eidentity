@@ -22,12 +22,13 @@ const Header = () => (
   <style jsx>
       {`
  .footer {
-    width: 100%;
+    width: 95%;
     background: #004445a2;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 12px;
+    margin-top: 20px;
   }
   .emergency {
     background: red;

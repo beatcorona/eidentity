@@ -3,14 +3,13 @@ import Footer from './Footer';
 
 
 const layoutStyle = {
-  margin: '0 auto',
   padding: 20,
-  width: '95vw',
+  width: '100vw',
 }
 const background = {
-    width: '100%',
+    width: '100vw',
     minWidth: '1000px',
-    height: '100vh',
+    height: '110vh',
     position: 'fixed',
     top: 0,
     left: 0,
@@ -23,18 +22,18 @@ export default function Layout(props) {
     <div style={layoutStyle}>
         <div className="background-overlay"></div>
         <img src="/images/corona-background_1a.webp" className="background" style={background}></img>
-
+    
       <Header />
       {props.children}
       <Footer />
       <style jsx>{`
         .background {
             margin: 0 auto;
-            height: 100vh;
+            height: 110vh;
         }
         .background-overlay {
-            width: 100vw;
-            height: 100vh;
+            width: 110vw;
+            height: 110vh;
             position: fixed;
             top: 0;
             left: 0;
