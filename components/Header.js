@@ -11,7 +11,8 @@ const linkStyle = {
 
 const headerStyle = {
     border: '1px solid #111',
-    padding: 10,
+    paddingTop: 10,
+    paddingBottom: 10
 }
 
 const Header = () => (
